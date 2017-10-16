@@ -5,9 +5,9 @@ class CreateOffers < ActiveRecord::Migration[5.1]
       t.string   :spo, comment:      'Code of special price offer'
       t.datetime :date, comment:     'Date of offer'
       t.string   :tour, comment:     'Tour description'
-      t.string   :adl, comment:
-      t.string   :chd, comment:
-      t.string   :inf, comment:
+      t.string   :adl
+      t.string   :chd
+      t.string   :inf
       t.string   :currency, comment: 'Currency of offer'
       t.string   :country, comment: 'Country of offer'
 

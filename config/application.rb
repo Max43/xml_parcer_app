@@ -9,6 +9,10 @@ Bundler.require(*Rails.groups)
 module XmlParcerApp
   class Application < Rails::Application
 
+    config.generators do |g|
+      g.orm :active_record, primary_key_type: :uuid
+    end
+
     # Interactors
     config.autoload_paths += Dir[Rails.root.join('app', 'services', '**/')]
 
