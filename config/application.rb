@@ -15,6 +15,8 @@ module XmlParcerApp
 
     # Interactors
     config.autoload_paths += Dir[Rails.root.join('app', 'services', '**/')]
+    config.autoload_paths += Dir[Rails.root.join('app', 'parsers', '**/')]
+    config.autoload_paths += Dir[Rails.root.join('app', 'modules', '**/')]
 
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
