@@ -50,8 +50,8 @@ module XmlParcer
       parent.xpath(iterable_obj.to_s)
     end
 
-    def specific_xml_iterator(iterable_array:)
-      iterable_array = nested_object_fetcher(parent: iterable_array, iterable_obj: "HOTELS/HOTEL")
+    def specific_xml_iterator(iterable_array:, iterable_obj:)
+      iterable_array = nested_object_fetcher(parent: iterable_array, iterable_obj: iterable_obj)
       xml_iterator(iterable_array)
     end
 
